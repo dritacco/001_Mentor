@@ -2,15 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- displays site properly based on user's device -->
 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/normalizer.css">
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+    -->
 </head>
 <body>
-    
+    <header class="Header">
+        <!--Logo / navbar Header-->
+        <section class="section">
+            <article class="article">
+                    <figure>
+                        <img src="./images/logo.svg" alt="Logo Header">
+                    </figure>
+            </article>
+            <article class="article">
+                <nav class="navbar">
+                    <a href="">Features</a>
+                    <a href="">Team</a>
+                    <a href="">Sign In</a>
+                </nav>
+            </article>
+        </section>
+    </header>
+
+    <main class="Main">
+        <section class="section">
+            <!-- first article seeker -->
+            <article class="article">
+                <header class="header">
+                    <figure>
+                        <img src="./images/illustration-1.svg" alt="image ilustration 1">
+                    </figure>
+                </header>
+                <main class="main">
+                    <h1>All your files in one secure location, accessible anywhere.</h1>
+                    <p>  Fylo stores your most important files in one secure location. 
+                        Access them wherever you need, share and collaborate with friends, 
+                        family, and co-workers.
+                    </p>
+                </main>
+                <footer class="footer">
+                    <input class="input" type="email" placeholder="Enter your email...">
+                    <button class="button">Get Started</button>
+                </footer>
+            </article>
+
+            <!-- second article -->
+            <article class="article">
+                <header class="header">
+                    <figure>
+                        <img src="./images/illustration-2.svg" alt="image ilustration 2">
+                    </figure>
+                </header>
+                <main class="main">
+                    <h1>Stay productive, wherever you are</h1>
+                    <p>
+                        Never let location be an issue when accessing your files. Fylo has you 
+                        covered for all of your file storage needs.
+                    </p>
+                    <p>
+                        Securely share files and folders with friends, family and colleagues for 
+                        live collaboration. No email attachments required!
+                    </p>
+                    <a href="">See how Fylo works </a>
+                    <picture>
+                        <img src="../public/icons/icon-arrow.svg" alt="arrow icon" height="15px">
+                    </picture>
+                </main>
+                <!-- quote section -->
+                <footer class="footer">
+                    <picture>
+                        <img src="../public/icons/icon-quotes.svg" alt="icon quotes">
+                    </picture>
+                    <p>
+                        Fylo has improved our team productivity by an order of magnitude. Since 
+                        making the switch our team has become a well-oiled collaboration machine.
+                    </p>
+                    <figure>
+                        <img src="./images/avatar-testimonial.jpg" alt="imagen kyle">
+                    </figure>
+                    <h1>Kyle Burton</h1>
+                    <sub>Founder & CEO, Huddle</sub>
+                </footer>
+            </article>
+        </section>
+
+        <section>
+            <!-- third article fake footer with seeker -->
+            <article class="article">
+                <main class="main">
+                    <h1>Get early access today</h1>
+                    <p>
+                        It only takes a minute to sign up and our free starter tier is extremely generous. 
+                        If you have any questions, our support team would be happy to help you.
+                    </p>
+                    
+                </main>
+                <footer class="footer">
+                    <input class="input" type="email" placeholder="email@example.com">
+                    <button class="button">Get Started For Free</button>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+  <footer class="Footer">
+    <section class="section">
+        <article class="article">
+            <!--white logo-->
+            <header class="header">
+                <figure>
+                    <img src="./images/logo-blanco.svg" alt="imagen logo footer">
+                </figure>
+            </header>
+            <main class="main">
+                <!--group 1 contact-->
+                <div class="Finfo">
+                    <div class="contacto">
+                        <figure>
+                            <img height="10px" alt="Vector de teléfono" src="../public/icons/icon-phone.svg" />
+                        </figure>
+                        <p>Phone: +1-543-123-4567</p>
+                    </div>
+                    <div class="contacto">
+                        <figure>
+                            <img height="10px" alt="Logo de Gmail" src="../public/icons/icon-email.svg" />
+                        </figure>
+                        <p>example@fylo.com</p>
+                    </div>
+                </div>
+                <!--group 2 links-->
+                <div class="Finfo">
+                    <a href="">About Us</a>
+                    <a href="">Jobs</a>
+                    <a href="">Press</a>
+                    <a href="">Blog</a>
+                </div>
+                <!--group 3 links-->
+                <div class="Finfo">
+                    <a href="">Contact Us</a>
+                    <a href="">Terms</a>
+                    <a href="">Privacy</a>
+                </div>
+            </main>
+            <footer class="footer">
+                <!-- FB -->
+                <div class="redes">
+                    <a href="https://facebook.com/" target="_blank">  
+                        <img height="20px" src="../public/icons/icon-facebook.svg" alt="Logo de Facebook">
+                    </a>
+                
+                <!-- Tw -->
+                    <a href="https://twitter.com/" target="_blank">
+                        <img height="20px" src="../public/icons/icon-twitter.svg" alt="Logo de Twitter">
+                    </a>
+                
+                <!-- Insta -->
+                    <a href="https://instagram.com/" target="_blank">
+                        <img height="20px" src="../public/icons/icon-instagram.svg" alt="Logo de Instagram">
+                    </a>
+                </div>
+            </footer>
+        </article>
+
+    </section>
+
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Dario</a>.
+    </p>
+  </footer>
 </body>
 </html>
