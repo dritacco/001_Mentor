@@ -1,0 +1,19 @@
+/* // Main */
+
+@use './h-fonts' as F;
+@use './h-colors' as C;
+@use './mixin.scss' as M;
+
+.Main {
+    //Estilos para mobile
+    @include M.medias(mobile) {
+
+    }
+
+
+    //Estilos para desktop
+    @include M.medias(desktop) {
+
+    }
+    
+}
